@@ -8,8 +8,9 @@ class Employee(models.Model):
     email = models.CharField(max_length=100, default='')
     department = models.CharField(max_length=100, default='')
 
-    def save(self, *args, **kwargs):
-        super(Employee, self).save(*args, **kwargs)
-
     class Meta:
         ordering = ['created']
+
+
+def save(self, *args, **kwargs):
+    super(Employee, self).save(*args, **kwargs)

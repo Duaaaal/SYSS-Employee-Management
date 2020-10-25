@@ -1,5 +1,4 @@
 from django.urls import path, include
-from rest_framework.urlpatterns import format_suffix_patterns
 from rest_framework.routers import DefaultRouter
 from employees import views
 from employees.views import EmployeeViewSet, UserViewSet, api_root
